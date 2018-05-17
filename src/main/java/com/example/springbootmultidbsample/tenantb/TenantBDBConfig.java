@@ -37,7 +37,7 @@ public class TenantBDBConfig {
 	}
 
 	@Bean(name = "tenantBDataSource")
-	@ConfigurationProperties("ais.db.usaa")
+	@ConfigurationProperties("app.db.tenantb")
 	public DataSource secondDataSource() {
 		return secondDataSourceProperties().initializeDataSourceBuilder().build();
 	}*/
