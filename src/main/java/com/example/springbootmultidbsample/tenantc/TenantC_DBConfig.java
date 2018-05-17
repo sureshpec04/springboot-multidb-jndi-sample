@@ -37,7 +37,7 @@ public class TenantC_DBConfig {
 	}
 
 	@Bean(name = "tenantCDataSource")
-	@ConfigurationProperties("ais.db.allstate")
+	@ConfigurationProperties("app.db.tenantc")
 	public DataSource tenanct_C_DataSource() {
 		return tenant_C_DataSourceProperties().initializeDataSourceBuilder().build();
 	}*/
