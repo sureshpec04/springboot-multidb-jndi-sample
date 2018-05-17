@@ -43,7 +43,6 @@ public class TenantBDBConfig {
 	}*/
 	
 	@Bean(name = "tenantBDataSource" , destroyMethod="")
-	//@ConfigurationProperties(prefix="ais.db.geico")
 	public DataSource dataSource() throws Exception {
 		JndiDataSourceLookup dataSourceLookup = new JndiDataSourceLookup();
 		dataSourceLookup.setResourceRef(true);
